@@ -1,2 +1,9 @@
-# ml_from_scratch
-A repository to replicate machine learning algorithms
+# A repository to replicate machine learning algorithms
+
+# Project structure
+ROOT  
+├── notebooks               <- Notebooks for experiments  
+├── src                     <- Source code  
+│   └── models              <- Machine learning models  
+├── README.md               <- File readme  
+└── requirements.txt        <- Python requirements
