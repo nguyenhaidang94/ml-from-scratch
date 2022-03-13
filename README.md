@@ -6,6 +6,7 @@
 ├── notebooks               <- Notebooks for experiments  
 ├── src                     <- Source code  
 │   └── models              <- Machine learning models  
+├── .pylintrc               <- Pylint configs
 ├── README.md               <- File readme  
 └── requirements.txt        <- Python requirements
 ```
