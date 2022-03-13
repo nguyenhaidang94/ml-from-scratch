@@ -1,4 +1,4 @@
-# A repository to replicate machine learning algorithms
+# A repository to replicate ML algorithms
 
 # Project structure
 ```
