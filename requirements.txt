@@ -1,5 +1,6 @@
 jupyter
 numpy
+plotly-express
 pylint
 scikit-learn
 seaborn
