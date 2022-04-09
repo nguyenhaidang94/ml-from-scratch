@@ -1,6 +1,7 @@
 import numpy as np
 
 from .base import BaseModel
+from .helper import pinv
 
 
 class LinearRegression(BaseModel):
@@ -12,7 +13,7 @@ class LinearRegression(BaseModel):
         # account for the bias
         X = np.concatenate((X, np.ones((X.shape[0], 1))), axis=1)
         # use Moore-Penrose pseudo-inverse to make sure that matrix always has inverse
-        self._beta = np.linalg.pinv(X.T.dot(X)).dot(X.T).dot(y)
+        self._beta = pinv(X.T @ X) @ X.T @ y
 
     def predict(self, X: np.ndarray):
         X = np.concatenate((X, np.ones((X.shape[0], 1))), axis=1)
