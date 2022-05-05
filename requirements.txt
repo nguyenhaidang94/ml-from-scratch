@@ -1,3 +1,4 @@
+cvxopt
 jupyter
 numpy
 plotly-express
