@@ -25,7 +25,7 @@ class SVM(BaseModel):
         solution = cvxopt.solvers.qp(P, q, G, h, A, b)
         _lambda = np.ravel(solution['x'])
         # find support vectors
-        S = np.where(_lambda > 1e-10)[0]
+        S = np.where(_lambda > 1e-10)[0] # lambda is closed to zero
         self._w = K[:, S].dot(_lambda[S])
         self._b = np.mean(y[S] - X[S, :].dot(self._w))
 
